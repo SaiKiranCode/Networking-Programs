@@ -1,0 +1,99 @@
+1. Run nslookup to obtain the IP address of a Web server in Asia. What is the IP address of that server?
+a)cmd nslookup www.reddif.com 
+Server:		127.0.0.53
+Address:	127.0.0.53#53
+
+Non-authoritative answer:
+Name:	www.reddif.com
+Address: 45.88.202.115
+
+
+2. Run nslookup to determine the authoritative DNS servers for a university in Europe?
+cmd nslookup -type=NS ox.ac.uk
+Server:		127.0.0.53
+Address:	127.0.0.53#53
+
+Non-authoritative answer:
+ox.ac.uk	nameserver = auth6.dns.ox.ac.uk.
+ox.ac.uk	nameserver = auth4.dns.ox.ac.uk.
+ox.ac.uk	nameserver = dns1.ox.ac.uk.
+ox.ac.uk	nameserver = auth5.dns.ox.ac.uk.
+ox.ac.uk	nameserver = ns2.ja.net.
+ox.ac.uk	nameserver = dns0.ox.ac.uk.
+ox.ac.uk	nameserver = dns2.ox.ac.uk.
+
+nslookup auth6.dns.ox.ac.uk
+Server:		127.0.0.53
+Address:	127.0.0.53#53
+
+Non-authoritative answer:
+Name:	auth6.dns.ox.ac.uk
+Address: 185.24.221.32
+Name:	auth6.dns.ox.ac.uk
+Address: 2a02:2770:11:0:21a:4aff:febe:759b
+
+
+nslookup auth4.dns.ox.ac.uk
+Server:		127.0.0.53
+Address:	127.0.0.53#53
+
+Non-authoritative answer:
+Name:	auth4.dns.ox.ac.uk
+Address: 45.33.127.156
+Name:	auth4.dns.ox.ac.uk
+Address: 2600:3c00::f03c:91ff:fe96:beac
+
+nslookup auth5.dns.ox.ac.uk
+Server:		127.0.0.53
+Address:	127.0.0.53#53
+
+Non-authoritative answer:
+Name:	auth5.dns.ox.ac.uk
+Address: 93.93.128.67
+Name:	auth5.dns.ox.ac.uk
+Address: 2a00:1098:0:80:1000::10
+
+ nslookup dns0.ox.ac.uk
+Server:		127.0.0.53
+Address:	127.0.0.53#53
+
+Non-authoritative answer:
+Name:	dns0.ox.ac.uk
+Address: 129.67.1.190
+
+nslookup dns1.ox.ac.uk
+Server:		127.0.0.53
+Address:	127.0.0.53#53
+
+Non-authoritative answer:
+Name:	dns1.ox.ac.uk
+Address: 129.67.1.191
+
+
+nslookup dns2.ox.ac.uk
+Server:		127.0.0.53
+Address:	127.0.0.53#53
+
+Non-authoritative answer:
+Name:	dns2.ox.ac.uk
+Address: 163.1.2.190
+
+ nslookup ns2.ja.net
+Server:		127.0.0.53
+Address:	127.0.0.53#53
+
+Non-authoritative answer:
+Name:	ns2.ja.net
+Address: 193.63.105.17
+Name:	ns2.ja.net
+Address: 2001:630:0:45::11
+
+
+
+
+
+
+
+
+
+
